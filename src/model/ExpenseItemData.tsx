@@ -1,10 +1,6 @@
-export default interface ExpenseItemData {
-    title: string,
-    amount: number,
-    date: Date
-}
+import IExpenseItemData from "./IExpenseItemData";
 
-export class ExpenseItemDataImpl implements ExpenseItemData{
+export default class ExpenseItemData implements IExpenseItemData{
     title: string
     amount: number
     date: Date
